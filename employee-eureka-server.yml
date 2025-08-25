@@ -1,7 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: employee-eureka-server
+
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    tls:
+      enabled: false   # 👈 important to prevent TLS binding errors
 
 management:
   health:
