@@ -8,11 +8,11 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update   # 👈 fixed typo (was "updateeureka")
+      ddl-auto: update   # 👈 corrected (was "updateeureka")
 
 eureka:
   client:
-    register-with-eureka: true    # 👈 fixed key (was "registry-with-eureka")
+    register-with-eureka: true    # 👈 corrected (was "registry-with-eureka")
     fetch-registry: false
     service-url:
       defaultZone: http://localhost:8761/eureka
